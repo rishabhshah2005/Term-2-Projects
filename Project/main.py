@@ -44,9 +44,14 @@ def search_min():
       print(f"{i} scored {per}%")
 
 def highest_in_subject():
+    max_in_english = []
+    max_in_english = []
+    max_in_english = []
+    max_in_english = []
+    max_in_english = []
     for i in marks:
         for sub in subs:
-            
+
 
 print('INDEXS \n1. Display all records \n2. Add new record \n3. Update existing record \n4. Search with minimum percentage \n5. EXIT')
 

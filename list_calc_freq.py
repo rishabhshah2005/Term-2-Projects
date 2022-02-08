@@ -1,5 +1,3 @@
-from doctest import OutputChecker
-
 
 lst = [1, 1, 2, 3, 4, 5, 6, 1, 1, 7, 8, 1, 10, 22, 1, 34, 4]
 
