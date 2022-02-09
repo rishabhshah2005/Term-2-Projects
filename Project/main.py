@@ -43,17 +43,13 @@ def search_min():
     if per >= min_per:
       print(f"{i} scored {per}%")
 
-def highest_in_subject():
-    max_in_english = []
-    max_in_english = []
-    max_in_english = []
-    max_in_english = []
-    max_in_english = []
-    for i in marks:
-        for sub in subs:
+def max_marks():
+  for i in marks:
+    mx = max(marks[i])
+    print(f'{i} scored max in {subs[marks[i].index(mx)]} ({mx})')
 
 
-print('INDEXS \n1. Display all records \n2. Add new record \n3. Update existing record \n4. Search with minimum percentage \n5. EXIT')
+print('INDEXS \n1. Display all records \n2. Add new record \n3. Update existing record \n4. Search with minimum percentage \n5. Search max marks for each student \n6. EXIT')
 
 while True:
   index = int(input('enter index: '))
@@ -65,7 +61,9 @@ while True:
     update_record()
   elif index==4:
     search_min()
-  elif index==5:
+  elif index == 5:
+    max_marks()
+  elif index==6:
     break
   else:
-    print('Invalid index') 
+    print('Invalid index')
